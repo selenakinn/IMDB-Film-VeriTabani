@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      .myButton {
+        @apply inline-flex items-center gap-1 py-2 px-3 text-white rounded cursor-pointer text-sm transition-colors tracking-tighter;
+      }
+      th { @apply py-3 px-2; }
+      td { @apply p-2; }
+      tr:nth-child(2n) { @apply bg-zinc-100; }
+      tr { @apply hover:bg-sky-50; }
+      input, textarea { @apply rounded border border-zinc-300 block w-full; }
+      input { @apply h-10 px-2; }
+      .view-label { @apply text-right font-bold w-32 pr-4; }
+    </style>
+    <title>Vite + React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
